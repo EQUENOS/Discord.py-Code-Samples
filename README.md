@@ -23,7 +23,7 @@ async def on_command_error(ctx, error): # Здесь error это и есть о
             await ctx.send("Что-то было введено неправильно")
 ```
 Так что если конвертер не спарвится, то вызовется ошибка `commands.BadArguemnt`, которая, в свою очередь, тоже имеет разновидности.<br>
-В файле [custom_converters.py](https://github.com/EQUENOS/Discord.py-Code-Samples/custom_converters.py) я написал несколько дополнительных конвертеров. Как теперь ими пользоваться?
+В файле [custom_converters.py](https://github.com/EQUENOS/Discord.py-Code-Samples/blob/main/custom_converters.py) я написал несколько дополнительных конвертеров. Как теперь ими пользоваться?
 ```python
 from custom_converters import BoolConverter, BadBool
 
