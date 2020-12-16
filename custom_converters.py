@@ -107,10 +107,8 @@ class BoolConverter(Converter):
         -> Возвращает True/False или вызывает ошибку форматирования
         """
         arg = argument.lower()
-        if arg in ["on", "yes", "y", "1", "true", "да"]:
+        if arg in ["on", "yes", "y", "1", "true", "да", "д"]:
             return True
-        if arg in ["off", "no", "n", "0", "false", "нет"]:
+        if arg in ["off", "no", "n", "0", "false", "нет", "н", "не"]:
             return False
         raise BadBool(argument)
-
-
